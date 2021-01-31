@@ -21,10 +21,10 @@ namespace APICatalogo.Controllers
         {
             _context = contexto;
         }
-        [HttpGet("saudacao/{nome}")]
-        public ActionResult<string> GetSaudacao([FromServices] IMyService meuservico, string nome)
+       [HttpGet("saudacao/{nome}")]
+       public ActionResult<string> GetSaudacao([FromServices] IMyService myService, string nome)
         {
-            return meuservico.Saudacao(nome);
+            return myService.Saudacao(nome);
         }
 
 
